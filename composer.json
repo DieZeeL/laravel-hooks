@@ -1,11 +1,16 @@
 {
 
-    "name": "coinvestor/hook",
-    "description": "Simple hook engine for Laravel 5.*, 6.*. Forked from esemve/hook",
+    "name": "diezeel/laravel-hooks",
+    "description": "Simple hook engine for Laravel. Forked from esemve/hook",
     "type": "library",
     "keywords": ["Hook","Laravel"],
     "license": "MIT",
     "authors": [
+        {
+          "name": "Sergey Kornienko",
+          "email": "diez.eel@gmail.com",
+          "role": "Developer"
+        },
         {
             "name": "Bence Kádár",
             "email": "esemve@gmail.com",
@@ -21,5 +26,12 @@
 		"psr-4": {
 			"Esemve\\Hook\\": "src/"
 		}
-	}
+	},
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Esemve\\Hook\\HookServiceProvider"
+        ]
+      }
+    }
 }
