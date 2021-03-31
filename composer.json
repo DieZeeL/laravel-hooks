@@ -31,7 +31,10 @@
       "laravel": {
         "providers": [
           "Esemve\\Hook\\HookServiceProvider"
-        ]
+        ],
+          "aliases": {
+              "Hook": "Esemve\\Hook\\Facades\\Hook"
+          }
       }
     }
 }
